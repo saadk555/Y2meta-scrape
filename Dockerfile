@@ -19,4 +19,4 @@ COPY . ./
 EXPOSE 5000 
 
 # Command to start your Flask API when the container runs
-CMD ["python", "api.py"] 
+CMD ["python", "app.py"] 

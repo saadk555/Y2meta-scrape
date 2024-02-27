@@ -28,7 +28,5 @@ def api_get_link():
         return jsonify({"error": "Invalid input format. Expecting only the video ID and query parameters"}), 400
 
 
-'''
 if __name__ == "__main__":
     app.run(host="0.0.0.0") 
-'''
