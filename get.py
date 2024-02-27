@@ -2,15 +2,13 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.service import Service as ChromeService  # Updated import
+from webdriver_manager.chrome import ChromeDriverManager
 import time
 
 def get_mp3_download_link(video_url):
     options = webdriver.ChromeOptions()
-    options.add_argument("--start-minimized") 
-    #options.add_argument("user-data-dir=C:\\Users\\dell\\SeleniumProjects\\automation_profile") 
-    #prefs = {"download.default_directory": "D:\\Downloads"}  
-    #options.add_experimental_option("prefs", prefs)
-    driver = webdriver.Chrome(options=options) 
+    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 
     driver.get(video_url)
 
