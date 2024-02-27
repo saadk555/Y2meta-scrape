@@ -67,5 +67,5 @@ def get_mp3_downloads(video_url):
         driver.quit()
 
 # Example usage
-video_url = "https://y2meta.app/en/youtube/kffacxfA7G4"  
+video_url = "https://y2meta.app/en/youtube/6TbG2EJITQY"  
 get_mp3_downloads(video_url)
