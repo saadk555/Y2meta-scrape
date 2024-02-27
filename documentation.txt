@@ -1,0 +1,6 @@
+USE get request with this format :
+curl http://127.0.0.1:5000/get_download_link?video_url= "your-video-id"
+
+
+Example:
+curl http://127.0.0.1:5000/get_download_link?video_url=4bzFo8d6ixM?si=B2WTcFtu07WfSeak
