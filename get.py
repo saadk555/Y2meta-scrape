@@ -25,7 +25,7 @@ def get_mp3_download_link(video_url):
         all_download_buttons = driver.find_elements(By.CLASS_NAME, "btn-download-size")
         last_button = None
         for button in all_download_buttons:
-            if button.get_attribute("data-ftype") == "mp3" and button.get_attribute("data-fquality") == "256":
+            if button.get_attribute("data-ftype") == "mp3" and button.get_attribute("data-fquality") == "320":
                 last_button = button
                 break
 
